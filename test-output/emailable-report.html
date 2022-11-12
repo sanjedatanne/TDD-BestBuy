@@ -9,71 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,898</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">95,916</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">auto.AutoTest</td><td><a href="#m0">autoSearch</a></td><td rowspan="1">1667174811157</td><td rowspan="1">12467</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">home.HomeTest</td><td><a href="#m0">laptopCheckout</a></td><td rowspan="1">1668229666859</td><td rowspan="1">87179</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">auto.AutoTest#autoSearch</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">laptops : has been passed to ---> [[ChromeDriver: chrome on MAC (e9fb737de709b84bb3507149bd9a50ea)] -> id: gh-search-input]<br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=107.0.5304.87)
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;marjanas-Air&apos;, ip: &apos;fe80:0:0:0:44f:80c9:3ba0:3a67%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e9fb737de709b84bb3507149bd9a50ea, findElement {using=xpath, value=//button[@title= &apos;submit search&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/hs/b023_vh174z...}, goog:chromeOptions: {debuggerAddress: localhost:59063}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59063/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e9fb737de709b84bb3507149bd9a50ea
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:4215)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:169)
-	at common.CommonActions.click(CommonActions.java:30)
-	at pages.HomePage.autoSteps(HomePage.java:38)
-	at auto.AutoTest.autoSearch(AutoTest.java:12)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">home.HomeTest#laptopCheckout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">laptops : has been passed to ---> [[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> id: gh-search-input]<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //button[@title= 'submit search']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //button[@title= 'submit search']] <--- has been PRESENT<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //button[@title= 'submit search']] <--- is VISIBLE<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //button[@title= 'submit search']] <--- has been clicked<br><br/>Proxy element for: DefaultElementLocator 'By.xpath: (//a[text() = 'HP - 15.6" Touch-Screen Laptop - Intel Core i7 - 16GB Memory - 512GB SSD - Natural Silver']) [1]' <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@id = 'warranty-sku-5802904-warranty-selector']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //button[@class='c-button c-button-primary c-button-lg c-button-block c-button-icon c-button-icon-leading add-to-cart-button']] <--- has been clicked<br><br/>Proxy element for: DefaultElementLocator 'By.xpath: //a[@class = 'c-button c-button-secondary c-button-sm c-button-block ']' <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //button[@class = 'btn btn-lg btn-block btn-primary']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //button[@class ='c-button c-button-secondary c-button-lg cia-guest-content__continue guest']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //button[@class = 'c-button-link card-call-to-action-button']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'firstName']] <--- has been clicked<br><br/>Nick : has been passed to ---> [[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'firstName']]<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'firstName']] <--- has been PRESENT<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'firstName']] <--- is VISIBLE<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'firstName']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'lastName']] <--- has been clicked<br><br/>John : has been passed to ---> [[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'lastName']]<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'lastName']] <--- has been PRESENT<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'lastName']] <--- is VISIBLE<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'lastName']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@class= 'tb-input  autocomplete__input']] <--- has been clicked<br><br/>25 E 104th St, New York NY : has been passed to ---> [[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@class= 'tb-input  autocomplete__input']]<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@class= 'tb-input  autocomplete__input']] <--- has been PRESENT<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@class= 'tb-input  autocomplete__input']] <--- is VISIBLE<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@class= 'tb-input  autocomplete__input']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'city']] <--- has been clicked<br><br/>New York : has been passed to ---> [[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'city']]<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'city']] <--- has been PRESENT<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'city']] <--- is VISIBLE<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name= 'city']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //select[@id='state']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //select[@id='state']] <--- has been PRESENT<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //select[@id='state']] <--- is VISIBLE<br><br/>NY : has been selected for ---> [[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //select[@id='state']]<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name='zipcode']] <--- has been clicked<br><br/>10029 : has been passed to ---> [[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name='zipcode']]<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name='zipcode']] <--- has been PRESENT<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name='zipcode']] <--- is VISIBLE<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //input[@name='zipcode']] <--- has been clicked<br><br/>[[ChromeDriver: chrome on MAC (cd5c1628969923881a36edf59ff35190)] -> xpath: //button[@class= 'c-button c-button-secondary c-button-md new-address-form__button']] <--- has been clicked<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
