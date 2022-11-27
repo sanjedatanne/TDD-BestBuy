@@ -4,15 +4,16 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Configuration {
-	
+
 	private Properties properties;
+
 	public String getProperty(String key) {
 		return properties.getProperty(key);
 	}
-	
+
 	public Configuration() {
 		loadProperty();
-		
+
 	}
 
 	public void loadProperty() {
@@ -22,7 +23,6 @@ public class Configuration {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		
+
 	}
 }

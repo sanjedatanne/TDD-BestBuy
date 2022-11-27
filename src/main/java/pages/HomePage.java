@@ -1,13 +1,10 @@
 package pages;
 
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import common.CommonWaits;
-
 import static common.CommonActions.*;
 
 public class HomePage {
@@ -27,13 +24,13 @@ public class HomePage {
 	WebElement enterSearchElement;
 	@FindBy(xpath = "(//a[text() = 'HP - 15.6\" Touch-Screen Laptop - Intel Core i7 - 16GB Memory - 512GB SSD - Natural Silver']) [1]")
 	WebElement clickLaptop;
-	@FindBy(xpath = "//input[@id = 'warranty-sku-5802904-warranty-selector']")
+	@FindBy(xpath = "(//input[@type= 'checkbox' and starts-with(@id, 'warranty-sku-')]) [3]")
 	WebElement warrantyBox;
-	@FindBy(xpath = "//button[@class='c-button c-button-primary c-button-lg c-button-block c-button-icon c-button-icon-leading add-to-cart-button']")
+	@FindBy(css = ".c-button.c-button-primary.c-button-lg.c-button-block.c-button-icon.c-button-icon-leading.add-to-cart-button")
 	WebElement addToCart;
-	@FindBy(xpath = "//a[@class = 'c-button c-button-secondary c-button-sm c-button-block ']")
+	@FindBy(css = ".c-button.c-button-secondary.c-button-sm.c-button-block")
 	WebElement goToCart;
-	@FindBy(xpath = "//button[@class = 'btn btn-lg btn-block btn-primary']")
+	@FindBy(css = ".btn.btn-lg.btn-block.btn-primary")
 	WebElement checkOut;
 	@FindBy(xpath = "//button[@class ='c-button c-button-secondary c-button-lg cia-guest-content__continue guest']")
 	WebElement continueAsGuest;
@@ -43,7 +40,7 @@ public class HomePage {
 	WebElement firstName;
 	@FindBy(xpath = "//input[@name= 'lastName']")
 	WebElement lastName;
-	@FindBy(xpath = "//input[@class= 'tb-input  autocomplete__input']")
+	@FindBy(id = "street")
 	WebElement address;
 	@FindBy(xpath = "//input[@name= 'city']")
 	WebElement city;
@@ -51,13 +48,12 @@ public class HomePage {
 	WebElement selectState;
 	@FindBy(xpath = "//input[@name='zipcode']")
 	WebElement zip;
-	@FindBy(xpath = "//button[@class= 'c-button c-button-secondary c-button-md new-address-form__button']")
+	@FindBy(css = ".c-button.c-button-secondary.c-button-md.new-address-form__button")
 	WebElement applyInput;
 
-	public void laptopSearch() {
-		input(searchLaptopElement, "laptops");
-		click(enterSearchElement);
-
+	public void laptopSearch(String item) {
+		click(searchLaptopElement);
+		input(searchLaptopElement, item);
 		waits.waitUntilVisible(enterSearchElement);
 		if (isPresent(enterSearchElement) && isDisplayed(enterSearchElement)) {
 			click(enterSearchElement);
@@ -116,9 +112,9 @@ public class HomePage {
 
 	}
 
-	public void addressInput() {
+	public void addressInput(String house) {
 		click(address);
-		input(address, "25 E 104th St, New York NY");
+		input(address, house);
 		sleep(1);
 
 		waits.waitUntilVisible(address);
@@ -128,9 +124,9 @@ public class HomePage {
 
 	}
 
-	public void cityInput() {
+	public void cityInput(String capital) {
 		click(city);
-		input(city, "New York");
+		input(city, capital);
 		sleep(1);
 
 		waits.waitUntilVisible(city);
@@ -142,14 +138,15 @@ public class HomePage {
 
 	public void state() {
 		click(selectState);
+		sleep(1);
 		if (isPresent(selectState) && isDisplayed(selectState)) {
 			selectDropdown(selectState, "NY");
 		}
 	}
 
-	public void zipCode() {
+	public void zipCode(String areaCode) {
 		click(zip);
-		input(zip, "10029");
+		input(zip, areaCode);
 		sleep(1);
 
 		waits.waitUntilVisible(zip);

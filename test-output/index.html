@@ -24,23 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
                     <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="home.HomeTest" class="method navigator-link" hash-for-method="laptopCheckout">laptopCheckout</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="moreAtBB.moreAtBestBuyTest" hash-for-method="polariodCamGift">polariodCamGift</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,34 +119,94 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">home.HomeTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">moreAtBB.moreAtBestBuyTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="laptopCheckout">
-                  </a> <!-- laptopCheckout -->
-                  <span class="method-name">laptopCheckout</span>
+                  <a name="polariodCamGift">
+                  </a> <!-- polariodCamGift -->
+                  <span class="method-name">polariodCamGift</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.c-button.c-button-secondary.c-button-sm.c-button-block&quot;}
+  (Session info: chrome=107.0.5304.110)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;marjanas-Air&apos;, ip: &apos;fe80:0:0:0:1876:4ef4:7241:4a0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7ad161932f66d2e91bc8722396812ad7, findElement {using=css selector, value=.c-button.c-button-secondary.c-button-sm.c-button-block}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/hs/b023_vh174z...}, goog:chromeOptions: {debuggerAddress: localhost:55729}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55729/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7ad161932f66d2e91bc8722396812ad7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at common.CommonActions.click(CommonActions.java:30)
+	at pages.MoreAtBestBuy.goToCart(MoreAtBestBuy.java:50)
+	at moreAtBB.moreAtBestBuyTest.polariodCamGift(moreAtBestBuyTest.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-failed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/hs/b023_vh174z0ljvc56_h6kk80000gn/T/testng-eclipse--796439634/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/hs/b023_vh174z0ljvc56_h6kk80000gn/T/testng-eclipse--196537643/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;home.HomeTest&quot;/&gt;
+      &lt;class name=&quot;moreAtBB.moreAtBestBuyTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -188,9 +248,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'laptopCheckout')
-data.setCell(0, 2, 'home.HomeTest')
-data.setCell(0, 3, 88155);
+data.setCell(0, 1, 'polariodCamGift')
+data.setCell(0, 2, 'moreAtBB.moreAtBestBuyTest')
+data.setCell(0, 3, 79875);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -207,50 +267,12 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">laptopCheckout</span>
+              <span class="reporter-method-name">polariodCamGift</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">laptops : has been passed to ---> [[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> id: gh-search-input]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //button[@title= 'submit search']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //button[@title= 'submit search']] <--- has been PRESENT<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //button[@title= 'submit search']] <--- is VISIBLE<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //button[@title= 'submit search']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">Proxy element for: DefaultElementLocator 'By.xpath: (//a[text() = 'HP - 15.6" Touch-Screen Laptop - Intel Core i7 - 16GB Memory - 512GB SSD - Natural Silver']) [1]' <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@id = 'warranty-sku-5802904-warranty-selector']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //button[@class='c-button c-button-primary c-button-lg c-button-block c-button-icon c-button-icon-leading add-to-cart-button']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">Proxy element for: DefaultElementLocator 'By.xpath: //a[@class = 'c-button c-button-secondary c-button-sm c-button-block ']' <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //button[@class = 'btn btn-lg btn-block btn-primary']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //button[@class ='c-button c-button-secondary c-button-lg cia-guest-content__continue guest']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //button[@class = 'c-button-link card-call-to-action-button']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'firstName']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">Nick : has been passed to ---> [[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'firstName']]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'firstName']] <--- has been PRESENT<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'firstName']] <--- is VISIBLE<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'firstName']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'lastName']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">John : has been passed to ---> [[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'lastName']]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'lastName']] <--- has been PRESENT<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'lastName']] <--- is VISIBLE<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'lastName']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@class= 'tb-input  autocomplete__input']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">25 E 104th St, New York NY : has been passed to ---> [[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@class= 'tb-input  autocomplete__input']]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@class= 'tb-input  autocomplete__input']] <--- has been PRESENT<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@class= 'tb-input  autocomplete__input']] <--- is VISIBLE<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@class= 'tb-input  autocomplete__input']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'city']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">New York : has been passed to ---> [[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'city']]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'city']] <--- has been PRESENT<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'city']] <--- is VISIBLE<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name= 'city']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //select[@id='state']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //select[@id='state']] <--- has been PRESENT<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //select[@id='state']] <--- is VISIBLE<br></span>
-                <span class="reporter-method-output">NY : has been selected for ---> [[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //select[@id='state']]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name='zipcode']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">10029 : has been passed to ---> [[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name='zipcode']]<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name='zipcode']] <--- has been PRESENT<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name='zipcode']] <--- is VISIBLE<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //input[@name='zipcode']] <--- has been clicked<br></span>
-                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (b678dfae63f553dd8da2f5038237db79)] -> xpath: //button[@class= 'c-button c-button-secondary c-button-md new-address-form__button']] <--- has been clicked<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (7ad161932f66d2e91bc8722396812ad7)] -> xpath: //a[text()='Gift Ideas']] <--- has been clicked<br></span>
+                <span class="reporter-method-output">Proxy element for: DefaultElementLocator 'By.xpath: //p[text()='Retro Gifts']' <--- has been clicked<br></span>
+                <span class="reporter-method-output">Proxy element for: DefaultElementLocator 'By.xpath: (//a[@href='/site/polaroid-now-/6476147.p?skuId=6476147']) [2]' <--- has been clicked<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (7ad161932f66d2e91bc8722396812ad7)] -> css selector: .c-button.c-button-primary.c-button-lg.c-button-block.c-button-icon.c-button-icon-leading.add-to-cart-button] <--- has been clicked<br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -268,19 +290,37 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">home.HomeTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">moreAtBB.moreAtBestBuyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initiatinExtentReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeEachTest(public void moreAtBB.moreAtBestBuyTest.polariodCamGift())</span>
+                <span class="method-start">412 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpDriver</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">431 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">laptopCheckout</span>
-                <span class="method-start">8525 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">polariodCamGift</span>
+                <span class="method-start">9298 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closingDriverSession</span>
-                <span class="method-start">96685 ms</span>
+                <span class="method-name">afterEachTest([TestResult name=polariodCamGift status=FAILURE method=moreAtBestBuyTest.polariodCamGift()[pri:0, in...)</span>
+                <span class="method-start">89198 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closingDriverSession</span>
+                <span class="method-start">89831 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeReport</span>
+                <span class="method-start">90373 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
